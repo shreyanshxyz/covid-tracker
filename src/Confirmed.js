@@ -10,17 +10,18 @@ function Confirmed() {
   const [TodayConfirmed, setTodayConfirmed] = useState();
 
   useEffect(() => {
-    async function getData() {
-      const caseRes = await axios.get(apiCall);
-
-      const recent = caseRes.data.cases_time_series.length - 1;
-      setTotConfirmed(caseRes.data.cases_time_series[recent].totalconfirmed);
-      setTodayConfirmed(caseRes.data.cases_time_series[recent].dailyconfirmed);
-    }
-
-    getData();
-    console.log(getData);
-  });
+    axios
+      .get(apiCall)
+      .then((res) => {
+        const recent = res.data.cases_time_series.length - 1;
+        console.log(res.data.cases_time_series[recent].totalconfirmed);
+        setTotConfirmed(res.data.cases_time_series[recent].totalconfirmed);
+        setTodayConfirmed(res.data.cases_time_series[recent].dailyconfirmed);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div className="confirmed__container">
       <h5>Confirmed</h5>
