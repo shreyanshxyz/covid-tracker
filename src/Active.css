@@ -1,0 +1,15 @@
+.active__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active__container h5 {
+  padding: 20px 50px 20px 50px;
+}
+
+.active__container h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
