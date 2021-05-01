@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px 20px 0px;
+  margin: 10px 10px 0px 10px;
+  justify-content: space-between;
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav__left h2 {
+  padding-left: 10px;
+}
+
+.nav__right h2 {
+  padding-right: 10px;
+}
