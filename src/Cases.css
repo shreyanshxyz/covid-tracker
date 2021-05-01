@@ -4,3 +4,79 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.confirmed__cases {
+  border-radius: 5px;
+  border-bottom: solid red 5px;
+  border-top: solid red 5px;
+}
+
+.confirmed__cases {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.confirmed__cases:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.confirmed__cases {
+  padding: 2px 16px;
+}
+
+.active__cases {
+  border-radius: 5px;
+  border-bottom: lightseagreen solid 5px;
+  border-top: lightseagreen solid 5px;
+}
+
+.active__cases {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.active__cases:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.active__cases {
+  padding: 2px 16px;
+}
+
+.recovered__cases {
+  border-radius: 5px;
+  border-bottom: green solid 5px;
+  border-top: green solid 5px;
+}
+
+.recovered__cases {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.recovered__cases:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.recovered__cases {
+  padding: 2px 16px;
+}
+
+.deceased__cases {
+  border-radius: 5px;
+  border-bottom: gray solid 5px;
+  border-top: gray solid 5px;
+}
+
+.deceased__cases {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.deceased__cases:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.deceased__cases {
+  padding: 2px 16px;
+}
