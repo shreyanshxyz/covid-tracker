@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./Deceased.css";
 
 function Deceased() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -21,9 +22,10 @@ function Deceased() {
     console.log(getData);
   });
   return (
-    <div>
-      <h2>{TodayDeceased}</h2>
-      <h3>{TotDeceased}</h3>
+    <div className="deceased__container">
+      <h5>Deceased</h5>
+      <h4>+ {TodayDeceased}</h4>
+      <h2>{TotDeceased}</h2>
     </div>
   );
 }
