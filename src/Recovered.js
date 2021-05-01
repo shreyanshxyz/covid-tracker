@@ -11,17 +11,18 @@ function Recovered() {
   const [TodayRecovered, setTodayRecovered] = useState();
 
   useEffect(() => {
-    async function getData() {
-      const caseRes = await axios.get(apiCall);
-
-      const recent = caseRes.data.cases_time_series.length - 1;
-      setTotRecovered(caseRes.data.cases_time_series[recent].totalrecovered);
-      setTodayRecovered(caseRes.data.cases_time_series[recent].dailyrecovered);
-    }
-
-    getData();
-    console.log(getData);
-  });
+    axios
+      .get(apiCall)
+      .then((res) => {
+        const recent = res.data.cases_time_series.length - 1;
+        console.log(res.data.cases_time_series[recent].totalrecovered);
+        setTotRecovered(res.data.cases_time_series[recent].totalrecovered);
+        setTodayRecovered(res.data.cases_time_series[recent].dailyrecovered);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div className="recovered__container">
       <h5>Recovered</h5>
