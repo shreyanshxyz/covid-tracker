@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./Confirmed.css";
 
 function Confirmed() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -21,8 +22,9 @@ function Confirmed() {
     console.log(getData);
   });
   return (
-    <div>
-      <h3>{TodayConfirmed}</h3>
+    <div className="confirmed__container">
+      <h5>Confirmed</h5>
+      <h4>+ {TodayConfirmed}</h4>
       <h2>{TotConfirmed}</h2>
     </div>
   );
