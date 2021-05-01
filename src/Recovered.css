@@ -1,0 +1,18 @@
+.recovered__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recovered__container h5 {
+  padding: 20px 40px 20px 40px;
+}
+
+.recovered__container h4 {
+  padding-bottom: 20px;
+}
+
+.recovered__container h2 {
+  padding-bottom: 20px;
+}
