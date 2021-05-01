@@ -1,4 +1,5 @@
 import React from "react";
+import Active from "./Active";
 import "./Cases.css";
 import Confirmed from "./Confirmed";
 import Deceased from "./Deceased";
@@ -10,7 +11,9 @@ function Cases() {
       <div>
         <Confirmed />
       </div>
-      <div>Active</div>
+      <div>
+        <Active />
+      </div>
       <div>
         <Recovered />
       </div>
