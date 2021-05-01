@@ -8,16 +8,16 @@ import Recovered from "./Recovered";
 function Cases() {
   return (
     <div className="cases__main">
-      <div>
+      <div className="confirmed__cases">
         <Confirmed />
       </div>
-      <div>
+      <div className="active__cases">
         <Active />
       </div>
-      <div>
+      <div className="recovered__cases">
         <Recovered />
       </div>
-      <div>
+      <div className="deceased__cases">
         <Deceased />
       </div>
     </div>
