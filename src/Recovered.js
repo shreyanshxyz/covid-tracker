@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./Recovered.css";
 
 function Recovered() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -22,8 +23,9 @@ function Recovered() {
     console.log(getData);
   });
   return (
-    <div>
-      <h3>{TodayRecovered}</h3>
+    <div className="recovered__container">
+      <h5>Recovered</h5>
+      <h4>+ {TodayRecovered}</h4>
       <h2>{TotRecovered}</h2>
     </div>
   );
