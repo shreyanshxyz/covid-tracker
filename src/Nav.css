@@ -1,9 +1,10 @@
 .nav {
   display: flex;
   flex-direction: row;
-  padding: 20px 0px 20px 0px;
-  margin: 10px 10px 0px 10px;
+  padding: 20px 10px 20px 10px;
+  /* padding: 10px 10px 0px 10px; */
   justify-content: space-between;
+  background: #f6f6f7;
 }
 
 .nav__right {
