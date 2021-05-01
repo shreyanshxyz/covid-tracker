@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "./Active.css";
 
 function Active() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -37,8 +38,9 @@ function Active() {
     console.log(getData);
   });
   return (
-    <div>
-      <h1>{TotActive}</h1>
+    <div className="active__container">
+      <h5>Active</h5>
+      <h2>{TotActive}</h2>
     </div>
   );
 }
