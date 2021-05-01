@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./Nav";
 import Cases from "./Cases";
+import IndiaStates from "./IndiaStates";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <Nav />
 
       <Cases />
+
+      <IndiaStates />
     </div>
   );
 }
