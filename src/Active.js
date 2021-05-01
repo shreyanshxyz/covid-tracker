@@ -18,25 +18,26 @@ function Active() {
   const [TotActive, setTotActive] = useState();
 
   useEffect(() => {
-    async function getData() {
-      const caseRes = await axios.get(apiCall);
+    axios
+      .get(apiCall)
+      .then((res) => {
+        const recent = res.data.cases_time_series.length - 1;
+        console.log(res.data.cases_time_series[recent].totalrecovered);
+        //   Deceased Cases
+        setTotDeceased(res.data.cases_time_series[recent].totaldeceased);
 
-      const recent = caseRes.data.cases_time_series.length - 1;
+        //   Confirmed Cases
+        setTotConfirmed(res.data.cases_time_series[recent].totalconfirmed);
 
-      //   Deceased Cases
-      setTotDeceased(caseRes.data.cases_time_series[recent].totaldeceased);
-
-      //   Confirmed Cases
-      setTotConfirmed(caseRes.data.cases_time_series[recent].totalconfirmed);
-
-      //   Recovered Cases
-      setTotRecovered(caseRes.data.cases_time_series[recent].totalrecovered);
-
-      setTotActive(TotConfirmed - TotDeceased - TotRecovered);
-    }
-    getData();
-    console.log(getData);
+        //   Recovered Cases
+        setTotRecovered(res.data.cases_time_series[recent].totalrecovered);
+        setTotActive(TotConfirmed - TotDeceased - TotRecovered);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   });
+
   return (
     <div className="active__container">
       <h5>Active</h5>
