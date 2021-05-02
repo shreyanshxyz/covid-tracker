@@ -1,0 +1,9 @@
+.state__dropdown {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.drop__original {
+  padding: 10px 10px 10px 0;
+}
