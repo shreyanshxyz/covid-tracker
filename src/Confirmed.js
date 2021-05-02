@@ -14,7 +14,7 @@ function Confirmed() {
       .get(apiCall)
       .then((res) => {
         const recent = res.data.cases_time_series.length - 1;
-        console.log(res.data.cases_time_series[recent].totalconfirmed);
+        // console.log(res.data.cases_time_series[recent].totalconfirmed);
         setTotConfirmed(res.data.cases_time_series[recent].totalconfirmed);
         setTodayConfirmed(res.data.cases_time_series[recent].dailyconfirmed);
       })
