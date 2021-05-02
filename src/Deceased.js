@@ -14,7 +14,7 @@ function Deceased() {
       .get(apiCall)
       .then((res) => {
         const recent = res.data.cases_time_series.length - 1;
-        console.log(res.data.cases_time_series[recent].totaldeceased);
+        // console.log(res.data.cases_time_series[recent].totaldeceased);
         setTotDeceased(res.data.cases_time_series[recent].totaldeceased);
         setTodayDeceased(res.data.cases_time_series[recent].dailydeceased);
       })
