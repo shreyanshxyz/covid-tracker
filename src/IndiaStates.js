@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { FormControl, MenuItem, Select } from "@material-ui/core";
+import "./IndiaStates.css";
 
 function IndiaStates() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -19,14 +19,12 @@ function IndiaStates() {
   }, []);
 
   return (
-    <div>
-      <FormControl className="state__dropdown">
-        <Select>
-          {States.map((s) => (
-            <MenuItem key={s.statecode}>{s.state}</MenuItem>
-          ))}
-        </Select>
-      </FormControl>
+    <div className="state__dropdown">
+      <select className="drop__original">
+        {States.map((s) => (
+          <option key={s.statecode}>{s.state}</option>
+        ))}
+      </select>
     </div>
   );
 }
