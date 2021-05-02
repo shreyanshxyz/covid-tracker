@@ -15,7 +15,7 @@ function Recovered() {
       .get(apiCall)
       .then((res) => {
         const recent = res.data.cases_time_series.length - 1;
-        console.log(res.data.cases_time_series[recent].totalrecovered);
+        // console.log(res.data.cases_time_series[recent].totalrecovered);
         setTotRecovered(res.data.cases_time_series[recent].totalrecovered);
         setTodayRecovered(res.data.cases_time_series[recent].dailyrecovered);
       })
