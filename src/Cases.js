@@ -4,22 +4,23 @@ import "./Cases.css";
 import Confirmed from "./Confirmed";
 import Deceased from "./Deceased";
 import Recovered from "./Recovered";
+import { Card } from "@material-ui/core";
 
 function Cases() {
   return (
     <div className="cases__main">
-      <div className="confirmed__cases">
+      <Card className="confirmed__cases">
         <Confirmed />
-      </div>
-      <div className="active__cases">
+      </Card>
+      <Card className="active__cases">
         <Active />
-      </div>
-      <div className="recovered__cases">
+      </Card>
+      <Card className="recovered__cases">
         <Recovered />
-      </div>
-      <div className="deceased__cases">
+      </Card>
+      <Card className="deceased__cases">
         <Deceased />
-      </div>
+      </Card>
     </div>
   );
 }
