@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./IndiaStates.css";
-import { Card } from "@material-ui/core";
+// import { Card } from "@material-ui/core";
 
 function IndiaStates() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -103,28 +103,32 @@ function IndiaStates() {
       </div>
 
       <div className="casesdropdown__cards">
-        <Card className="confirmed__card">
-          <h1>Confirmed</h1>
-          <h2>{DailyConfirmed}</h2>
-          <h3>{Confirmed}</h3>
-        </Card>
+        <div className="row1">
+          <div className="confirmed__card">
+            <p>Confirmed</p>
+            <h2>{DailyConfirmed}</h2>
+            <h3>{Confirmed}</h3>
+          </div>
 
-        <Card className="active__card">
-          <h1>Active</h1>
-          <h3>{Active}</h3>
-        </Card>
+          <div className="active__card">
+            <p>Active</p>
+            <h3>{Active}</h3>
+          </div>
+        </div>
 
-        <Card className="recovered__card">
-          <h1>Recovered</h1>
-          <h2>{DailyRecovered}</h2>
-          <h3>{Recovered}</h3>
-        </Card>
+        <div className="row2">
+          <div className="recovered__card">
+            <p>Recovered</p>
+            <h2>{DailyRecovered}</h2>
+            <h3>{Recovered}</h3>
+          </div>
 
-        <Card className="deaths_card">
-          <h1>Deaths</h1>
-          <h2>{DailyDeaths}</h2>
-          <h3>{Deaths}</h3>
-        </Card>
+          <div className="deaths__card">
+            <p>Deaths</p>
+            <h2>{DailyDeaths}</h2>
+            <h3>{Deaths}</h3>
+          </div>
+        </div>
       </div>
     </div>
   );

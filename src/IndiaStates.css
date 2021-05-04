@@ -1,6 +1,7 @@
 .drop__cards {
   padding-top: 100px;
   display: flex;
+  flex: 0.9;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -8,4 +9,96 @@
 
 .drop__original {
   padding: 10px 10px 10px 0;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.row1 .confirmed__card {
+  /* Add shadows to create the "card" effect */
+  min-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+  border: solid red 3px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.row1 .confirmed__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.row1 .confirmed__card {
+  padding: 2px 16px;
+}
+
+.row1 .active__card {
+  /* Add shadows to create the "card" effect */
+  min-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+  border: solid lightseagreen 3px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.row1 .active__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.row1 .active__card {
+  padding: 2px 16px;
+}
+
+.row2 {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 .recovered__card {
+  /* Add shadows to create the "card" effect */
+  min-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+  border: solid green 3px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.row2 .recovered__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.row2 .recovered__card {
+  padding: 2px 16px;
+}
+
+.row2 .deaths__card {
+  /* Add shadows to create the "card" effect */
+  min-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+  border: solid gray 4px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.row2 .deaths__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.row2 .deaths__card {
+  padding: 2px 16px;
 }
