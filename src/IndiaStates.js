@@ -4,23 +4,28 @@ import "./IndiaStates.css";
 
 function IndiaStates() {
   const apiCall = "https://api.covid19india.org/data.json";
-  const [States, setStates] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get(apiCall)
-      .then((res) => {
-        console.log(res.data.statewise);
-        setStates(res.data.statewise);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get(apiCall)
+  //     .then((res) => {
+  //       console.log(res.data.statewise);
+  //       setStates(res.data.statewise);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
+
+  const stateAssign = (e) => {
+    axios.get(apiCall).then((res) => {
+      console.log(res.data.statewise);
+    });
+  };
 
   return (
     <div className="state__dropdown">
-      <select className="drop__original">
+      <select className="drop__original" onChange={stateAssign}>
         <option value="none" selected disabled hidden>
           Select A State
         </option>
