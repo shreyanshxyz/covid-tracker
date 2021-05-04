@@ -1,14 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./IndiaStates.css";
 
 function IndiaStates() {
   const apiCall = "https://api.covid19india.org/data.json";
 
+  // CONFIRMED CASES STATES
   const [Confirmed, setConfirmed] = useState([]);
-  const [DailyConfirmed, setDailyConfirmed] = useState();
+  const [DailyConfirmed, setDailyConfirmed] = useState([]);
+
+  // ACTIVE CASES STATEAS
   const [Active, setActive] = useState([]);
+
+  // RECOVERED CASES STATES
+  const [DailyRecovered, setDailyRecovered] = useState([]);
   const [Recovered, setRecovered] = useState([]);
+
+  // DEATHS CASES STATES
+  const [DailyDeaths, setDailyDeaths] = useState([]);
   const [Deaths, setDeaths] = useState([]);
 
   // useEffect(() => {
@@ -30,6 +39,13 @@ function IndiaStates() {
       // Confirmed
       setDailyConfirmed(res.data.statewise[e.target.value].deltaconfirmed);
       setConfirmed(res.data.statewise[e.target.value].confirmed);
+
+      // Active
+      setActive(res.data.statewise[e.target.value].active);
+
+      // Recovered
+      setDailyRecovered(res.data.statewise[e.target.value].deltarecovered);
+      setRecovered(res.data.statewise[e.target.value].recovered);
     });
   };
 
@@ -86,6 +102,23 @@ function IndiaStates() {
           <h1>Confirmed</h1>
           <h2>{DailyConfirmed}</h2>
           <h3>{Confirmed}</h3>
+        </div>
+
+        <div className="active__card">
+          <h1>Active</h1>
+          <h3>{Active}</h3>
+        </div>
+
+        <div className="recovered__card">
+          <h1>Recovered</h1>
+          <h2>{DailyRecovered}</h2>
+          <h3>{Recovered}</h3>
+        </div>
+
+        <div className="deaths_card">
+          <h1>Deaths</h1>
+          <h2>{DailyDeaths}</h2>
+          <h3>{Deaths}</h3>
         </div>
       </div>
     </div>
