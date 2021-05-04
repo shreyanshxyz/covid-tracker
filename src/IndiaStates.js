@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./IndiaStates.css";
+import { Card } from "@material-ui/core";
 
 function IndiaStates() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -46,6 +47,10 @@ function IndiaStates() {
       // Recovered
       setDailyRecovered(res.data.statewise[e.target.value].deltarecovered);
       setRecovered(res.data.statewise[e.target.value].recovered);
+
+      // Deaths
+      setDailyDeaths(res.data.statewise[e.target.value].deltadeaths);
+      setDeaths(res.data.statewise[e.target.value].deaths);
     });
   };
 
@@ -98,28 +103,28 @@ function IndiaStates() {
       </div>
 
       <div className="casesdropdown__cards">
-        <div className="confirmed__card">
+        <Card className="confirmed__card">
           <h1>Confirmed</h1>
           <h2>{DailyConfirmed}</h2>
           <h3>{Confirmed}</h3>
-        </div>
+        </Card>
 
-        <div className="active__card">
+        <Card className="active__card">
           <h1>Active</h1>
           <h3>{Active}</h3>
-        </div>
+        </Card>
 
-        <div className="recovered__card">
+        <Card className="recovered__card">
           <h1>Recovered</h1>
           <h2>{DailyRecovered}</h2>
           <h3>{Recovered}</h3>
-        </div>
+        </Card>
 
-        <div className="deaths_card">
+        <Card className="deaths_card">
           <h1>Deaths</h1>
           <h2>{DailyDeaths}</h2>
           <h3>{Deaths}</h3>
-        </div>
+        </Card>
       </div>
     </div>
   );
