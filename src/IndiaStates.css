@@ -27,8 +27,8 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 5px;
-  border: solid red 4px;
-  padding-right: 20px;
+  border-bottom: solid #ff073a 4px;
+  border-right: solid #ff073a 4px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -54,7 +54,8 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 5px;
-  border: solid lightseagreen 4px;
+  border-bottom: solid #007bff 4px;
+  border-right: solid #007bff 4px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -87,7 +88,8 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 5px;
-  border: solid green 4px;
+  border-bottom: solid rgba(40, 167, 69, 0.6) 4px;
+  border-right: solid rgba(40, 167, 69, 0.6) 4px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -114,7 +116,8 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 5px;
-  border: solid gray 4px;
+  border-bottom: solid #6c757d 4px;
+  border-right: solid #6c757d 4px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -145,5 +148,10 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 5px;
-  border: solid gray 4px;
+  border-bottom: solid #6c757d 4px;
+  border-right: solid #6c757d 4px;
+}
+
+.row3 .last__update:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
