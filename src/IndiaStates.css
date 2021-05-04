@@ -41,6 +41,7 @@
   padding: 2px;
   min-height: 140px;
   min-width: 175px;
+  margin-right: 15px;
 }
 
 .row1 .active__card {
@@ -66,6 +67,7 @@
   padding: 2px;
   min-height: 140px;
   min-width: 175px;
+  margin-left: 15px;
 }
 
 .row2 {
@@ -98,6 +100,7 @@
   padding: 2px;
   min-height: 140px;
   min-width: 175px;
+  margin-right: 15px;
 }
 
 .row2 .deaths__card {
@@ -124,4 +127,23 @@
   padding: 2px;
   min-height: 140px;
   min-width: 175px;
+  margin-left: 15px;
+}
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row3 .last__update {
+  padding: 7px;
+  min-width: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+  border: solid gray 4px;
 }
