@@ -21,9 +21,44 @@ function IndiaStates() {
   return (
     <div className="state__dropdown">
       <select className="drop__original">
-        {States.map((s) => (
-          <option key={s.statecode}>{s.state}</option>
-        ))}
+        <option>Total</option>
+        <option>Maharashtra</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>State 0</option>
+        <option>Jammu and Kashmir</option>
+        <option>Jharkhand</option>
+        <option>Uttarakhand</option>
+        <option>Himachal Pradesh</option>
+        <option>Goa</option>
+        <option>Puducherry</option>
+        <option>Tripura</option>
+        <option>Manipur</option>
+        <option>Chandigarh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Meghalaya</option>
+        <option>Nagaland</option>
+        <option>Ladakh</option>
+        <option>Sikkim</option>
+        <option>Andaman and Nicobar Islands</option>
+        <option>Mizoram</option>
+        <option>Dadra and Nagar Haveli and Daman and Diu</option>
+        <option>Lakshadweep</option>
+        <option>State Unassigned</option>
       </select>
     </div>
   );
