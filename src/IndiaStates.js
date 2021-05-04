@@ -28,40 +28,40 @@ function IndiaStates() {
         <option value={1}>Maharashtra</option>
         <option value={2}>Kerala</option>
         <option value={3}>Karnataka</option>
-        <option>Andhra Pradesh</option>
-        <option>Tamil Nadu</option>
-        <option>Delhi</option>
-        <option>Uttar Pradesh</option>
-        <option>West Bengal</option>
-        <option>Odisha</option>
-        <option>Rajasthan</option>
-        <option>Chhattisgarh</option>
-        <option>Telangana</option>
-        <option>Haryana</option>
-        <option>Gujarat</option>
-        <option>Bihar</option>
-        <option>Madhya Pradesh</option>
-        <option>Assam</option>
-        <option>Punjab</option>
-        <option>Jammu and Kashmir</option>
-        <option>Jharkhand</option>
-        <option>Uttarakhand</option>
-        <option>Himachal Pradesh</option>
-        <option>Goa</option>
-        <option>Puducherry</option>
-        <option>Tripura</option>
-        <option>Manipur</option>
-        <option>Chandigarh</option>
-        <option>Arunachal Pradesh</option>
-        <option>Meghalaya</option>
-        <option>Nagaland</option>
-        <option>Ladakh</option>
-        <option>Sikkim</option>
-        <option>Andaman and Nicobar Islands</option>
-        <option>Mizoram</option>
-        <option>Dadra and Nagar Haveli and Daman and Diu</option>
-        <option>Lakshadweep</option>
-        <option>State Unassigned</option>
+        <option value={4}>Andhra Pradesh</option>
+        <option value={4}>Tamil Nadu</option>
+        <option value={4}>Delhi</option>
+        <option value={4}>Uttar Pradesh</option>
+        <option value={4}>West Bengal</option>
+        <option value={4}>Odisha</option>
+        <option value={4}>Rajasthan</option>
+        <option value={4}>Chhattisgarh</option>
+        <option value={4}>Telangana</option>
+        <option value={4}>Haryana</option>
+        <option value={4}>Gujarat</option>
+        <option value={4}>Bihar</option>
+        <option value={4}>Madhya Pradesh</option>
+        <option value={4}>Assam</option>
+        <option value={4}>Punjab</option>
+        <option value={4}>Jammu and Kashmir</option>
+        <option value={4}>Jharkhand</option>
+        <option value={4}>Uttarakhand</option>
+        <option value={4}>Himachal Pradesh</option>
+        <option value={4}>Goa</option>
+        <option value={4}>Puducherry</option>
+        <option value={4}>Tripura</option>
+        <option value={4}>Manipur</option>
+        <option value={4}>Chandigarh</option>
+        <option value={4}>Arunachal Pradesh</option>
+        <option value={4}>Meghalaya</option>
+        <option value={4}>Nagaland</option>
+        <option value={4}>Ladakh</option>
+        <option value={4}>Sikkim</option>
+        <option value={4}>Andaman and Nicobar Islands</option>
+        <option value={4}>Mizoram</option>
+        <option value={4}>Dadra and Nagar Haveli and Daman and Diu</option>
+        <option value={4}>Lakshadweep</option>
+        <option value={4}>State Unassigned</option>
       </select>
     </div>
   );
