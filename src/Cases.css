@@ -7,8 +7,9 @@
 
 .confirmed__cases {
   border-radius: 5px;
-  border-bottom: solid red 5px;
-  border-top: solid red 5px;
+  border-bottom: solid #ff073a 5px;
+  border-top: solid #ff073a 5px;
+  background-color: white;
 }
 
 .confirmed__cases {
@@ -26,8 +27,9 @@
 
 .active__cases {
   border-radius: 5px;
-  border-bottom: lightseagreen solid 5px;
-  border-top: lightseagreen solid 5px;
+  border-bottom: #007bff solid 5px;
+  border-top: #007bff solid 5px;
+  background-color: white;
 }
 
 .active__cases {
@@ -45,8 +47,9 @@
 
 .recovered__cases {
   border-radius: 5px;
-  border-bottom: green solid 5px;
-  border-top: green solid 5px;
+  border-bottom: rgba(40, 167, 69, 0.6) solid 5px;
+  border-top: rgba(40, 167, 69, 0.6) solid 5px;
+  background-color: white;
 }
 
 .recovered__cases {
@@ -64,8 +67,9 @@
 
 .deceased__cases {
   border-radius: 5px;
-  border-bottom: gray solid 5px;
-  border-top: gray solid 5px;
+  border-bottom: #6c757d solid 5px;
+  border-top: #6c757d solid 5px;
+  background-color: white;
 }
 
 .deceased__cases {
