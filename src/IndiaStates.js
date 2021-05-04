@@ -21,6 +21,9 @@ function IndiaStates() {
   const [DailyDeaths, setDailyDeaths] = useState([]);
   const [Deaths, setDeaths] = useState([]);
 
+  // LAST UPDATED
+  const [LastUpdated, setLastUpdated] = useState();
+
   // useEffect(() => {
   //   axios
   //     .get(apiCall)
@@ -51,6 +54,9 @@ function IndiaStates() {
       // Deaths
       setDailyDeaths(res.data.statewise[e.target.value].deltadeaths);
       setDeaths(res.data.statewise[e.target.value].deaths);
+
+      // Updated
+      setLastUpdated(res.data.statewise[e.target.value].lastupdatedtime);
     });
   };
 
@@ -98,7 +104,7 @@ function IndiaStates() {
           <option value={34}>Mizoram</option>
           <option value={35}>Dadra and Nagar Haveli and Daman and Diu</option>
           <option value={36}>Lakshadweep</option>
-          <option value={37}>State Unassigned</option>
+          {/* <option value={37}>State Unassigned</option> */}
         </select>
       </div>
 
@@ -128,6 +134,9 @@ function IndiaStates() {
             <h4>+ {DailyDeaths}</h4>
             <h3>{Deaths}</h3>
           </div>
+        </div>
+        <div className="row3">
+          <h4 className="last__update">Last Updated: {LastUpdated}</h4>
         </div>
       </div>
     </div>
