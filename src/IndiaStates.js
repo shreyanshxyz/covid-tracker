@@ -104,7 +104,6 @@ function IndiaStates() {
           <option value={34}>Mizoram</option>
           <option value={35}>Dadra and Nagar Haveli and Daman and Diu</option>
           <option value={36}>Lakshadweep</option>
-          {/* <option value={37}>State Unassigned</option> */}
         </select>
       </div>
 
