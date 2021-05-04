@@ -40,7 +40,7 @@
 .row1 .confirmed__card {
   padding: 2px;
   min-height: 140px;
-  min-width: 140px;
+  min-width: 175px;
 }
 
 .row1 .active__card {
@@ -65,7 +65,7 @@
 .row1 .active__card {
   padding: 2px;
   min-height: 140px;
-  min-width: 140px;
+  min-width: 175px;
 }
 
 .row2 {
@@ -97,7 +97,7 @@
 .row2 .recovered__card {
   padding: 2px;
   min-height: 140px;
-  min-width: 140px;
+  min-width: 175px;
 }
 
 .row2 .deaths__card {
@@ -123,5 +123,5 @@
 .row2 .deaths__card {
   padding: 2px;
   min-height: 140px;
-  min-width: 140px;
+  min-width: 175px;
 }

@@ -106,7 +106,7 @@ function IndiaStates() {
         <div className="row1">
           <div className="confirmed__card">
             <p>Confirmed</p>
-            <h2>{DailyConfirmed}</h2>
+            <h4>+ {DailyConfirmed}</h4>
             <h3>{Confirmed}</h3>
           </div>
 
@@ -119,13 +119,13 @@ function IndiaStates() {
         <div className="row2">
           <div className="recovered__card">
             <p>Recovered</p>
-            <h2>{DailyRecovered}</h2>
+            <h4>+ {DailyRecovered}</h4>
             <h3>{Recovered}</h3>
           </div>
 
           <div className="deaths__card">
             <p>Deaths</p>
-            <h2>{DailyDeaths}</h2>
+            <h4>+ {DailyDeaths}</h4>
             <h3>{Deaths}</h3>
           </div>
         </div>
