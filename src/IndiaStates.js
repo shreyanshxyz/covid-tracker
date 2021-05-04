@@ -21,25 +21,28 @@ function IndiaStates() {
   return (
     <div className="state__dropdown">
       <select className="drop__original">
-        <option>Total</option>
-        <option>Maharashtra</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
-        <option>State 0</option>
+        <option value="none" selected disabled hidden>
+          Select A State
+        </option>
+        <option value={0}>Total</option>
+        <option value={1}>Maharashtra</option>
+        <option value={2}>Kerala</option>
+        <option value={3}>Karnataka</option>
+        <option>Andhra Pradesh</option>
+        <option>Tamil Nadu</option>
+        <option>Delhi</option>
+        <option>Uttar Pradesh</option>
+        <option>West Bengal</option>
+        <option>Odisha</option>
+        <option>Rajasthan</option>
+        <option>Chhattisgarh</option>
+        <option>Telangana</option>
+        <option>Haryana</option>
+        <option>Gujarat</option>
+        <option>Bihar</option>
+        <option>Madhya Pradesh</option>
+        <option>Assam</option>
+        <option>Punjab</option>
         <option>Jammu and Kashmir</option>
         <option>Jharkhand</option>
         <option>Uttarakhand</option>
