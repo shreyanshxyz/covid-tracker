@@ -13,12 +13,11 @@
   align-items: center;
 }
 
-.nav__left a {
-  padding-left: 10px;
-}
-
 .nav__right a {
   padding-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
 .nav__logo {
