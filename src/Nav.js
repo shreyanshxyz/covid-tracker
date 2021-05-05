@@ -12,7 +12,6 @@ function Nav() {
       <div className="nav__right">
         <a href="#">About</a>
         <a href="#">Resources</a>
-        <a href="#">Dark</a>
       </div>
     </div>
   );
