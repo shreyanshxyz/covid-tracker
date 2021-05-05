@@ -10,9 +10,9 @@ function Nav() {
       </div>
 
       <div className="nav__right">
-        <a>About</a>
-        <a>Resources</a>
-        <a>Dark</a>
+        <a href="#">About</a>
+        <a href="#">Resources</a>
+        <a href="#">Dark</a>
       </div>
     </div>
   );
