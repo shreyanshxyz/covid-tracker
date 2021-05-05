@@ -13,11 +13,11 @@
   align-items: center;
 }
 
-.nav__left h2 {
+.nav__left a {
   padding-left: 10px;
 }
 
-.nav__right h2 {
+.nav__right a {
   padding-right: 15px;
 }
 
