@@ -3,8 +3,8 @@ import Active from "./Active";
 import "./Cases.css";
 import Confirmed from "./Confirmed";
 import Deceased from "./Deceased";
+import Graph from "./Graph";
 import Recovered from "./Recovered";
-// import { div } from "@material-ui/core";
 
 function Cases() {
   return (
@@ -25,7 +25,7 @@ function Cases() {
       </div>
 
       <div className="cases__graph">
-        <h1>Graph</h1>
+        <Graph />
       </div>
     </div>
   );
