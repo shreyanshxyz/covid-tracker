@@ -1,5 +1,6 @@
 .footer__container {
   padding-top: 30px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,16 @@
 .social__media {
   display: flex;
   flex-direction: row;
-  padding-top: 5px;
+  padding-top: 10px;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__icon {
+  margin-right: 10px;
+  margin-left: 10px;
 }
