@@ -111,7 +111,7 @@ function IndiaStates() {
           <option value={36}>Lakshadweep</option>
         </select>
       </div>
-      <div className="card__graph">
+      <div id="state__stats" className="card__graph">
         <div style={{ paddingRight: "100px" }} className="graph__statewise">
           <Bar data={stateData} />
         </div>
