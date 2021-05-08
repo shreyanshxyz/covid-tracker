@@ -1,5 +1,9 @@
-.drop__cards {
+.card__graph {
   padding-top: 100px;
+  display: flex;
+}
+
+.drop__cards {
   display: flex;
   flex: 0.9;
   flex-direction: column;
