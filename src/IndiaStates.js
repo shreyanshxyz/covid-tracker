@@ -38,7 +38,7 @@ function IndiaStates() {
               res.data.statewise[e.target.value].recovered,
               res.data.statewise[e.target.value].deaths,
             ],
-            backgroundColor: ["#ff073a", "green", "gray"],
+            backgroundColor: ["#ff073a", "limegreen", "gray"],
             borderWidth: 4,
             fill: true,
           },
