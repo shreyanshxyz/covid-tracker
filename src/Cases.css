@@ -59,8 +59,8 @@
 
 .recovered__cases {
   border-radius: 5px;
-  border-bottom: rgba(40, 167, 69, 0.6) solid 5px;
-  border-top: rgba(40, 167, 69, 0.6) solid 5px;
+  border-bottom: limegreen solid 5px;
+  border-top: limegreen solid 5px;
   background-color: white;
 }
 
