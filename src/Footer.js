@@ -4,8 +4,12 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer__container">
-      <h1 className="made__by">Salutation</h1>
-      <div className="social__media">Jah</div>
+      <p className="made__by"> &copy; Shreyansh Bhadoria | 2021 </p>
+      <div className="social__media">
+        <p>kk</p>
+        <p>kk</p>
+        <p>kk</p>
+      </div>
     </div>
   );
 }
