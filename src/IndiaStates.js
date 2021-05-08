@@ -26,6 +26,9 @@ function IndiaStates() {
   const [stateData, setstateData] = useState();
 
   const stateAssign = (e) => {
+    document.getElementById("toggle").style.display = "block";
+    document.getElementById("toggle1").style.display = "block";
+
     axios.get(apiCall).then((res) => {
       setstateData({
         labels: ["Confirmed", "Recovered", "Deaths"],
@@ -111,11 +114,20 @@ function IndiaStates() {
           <option value={36}>Lakshadweep</option>
         </select>
       </div>
-      <div id="state__stats" className="card__graph">
-        <div style={{ paddingRight: "100px" }} className="graph__statewise">
+      <div className="card__graph">
+        <div
+          style={{ paddingRight: "100px" }}
+          style={{ display: "none" }}
+          id="toggle"
+          className="graph__statewise"
+        >
           <Bar data={stateData} />
         </div>
-        <div style={{ paddingLeft: "50px" }} className="casesdropdown__cards">
+        <div
+          style={{ paddingLeft: "50px", display: "none" }}
+          id="toggle1"
+          className="casesdropdown__cards"
+        >
           <div className="row1">
             <div className="confirmed__card">
               <p>Confirmed</p>
