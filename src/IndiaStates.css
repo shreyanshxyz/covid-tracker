@@ -1,18 +1,23 @@
-.card__graph {
+.dropdown__barandstates {
   padding-top: 100px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.drop__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.card__graph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .drop__original {
   padding: 10px 10px 10px 0;
+}
+
+.graph__statewise {
+  min-width: 630px;
 }
 
 .row1 {
@@ -158,11 +163,4 @@
 
 .row3 .last__update:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.graph__statewise {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 630px;
 }
