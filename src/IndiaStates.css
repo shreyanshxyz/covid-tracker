@@ -92,8 +92,8 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 5px;
-  border-bottom: solid rgba(40, 167, 69, 0.6) 4px;
-  border-right: solid rgba(40, 167, 69, 0.6) 4px;
+  border-bottom: solid limegreen 4px;
+  border-right: solid limegreen 4px;
 }
 
 /* On mouse-over, add a deeper shadow */
