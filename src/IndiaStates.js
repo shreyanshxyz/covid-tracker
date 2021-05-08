@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./IndiaStates.css";
+import { Bar } from "react-chartjs-2";
 
 function IndiaStates() {
   const apiCall = "https://api.covid19india.org/data.json";
@@ -22,10 +23,27 @@ function IndiaStates() {
 
   // LAST UPDATED
   const [LastUpdated, setLastUpdated] = useState();
+  const [stateData, setstateData] = useState();
 
   const stateAssign = (e) => {
     axios.get(apiCall).then((res) => {
-      console.log(res.data.statewise);
+      setstateData({
+        labels: ["Confirmed", "Recovered", "Deaths"],
+        datasets: [
+          {
+            label: "Confirmed",
+            data: [
+              // confCase[e.target.value],
+              res.data.statewise[e.target.value].confirmed,
+              res.data.statewise[e.target.value].recovered,
+              res.data.statewise[e.target.value].deaths,
+            ],
+            backgroundColor: ["#ff073a", "green", "gray"],
+            borderWidth: 4,
+            fill: true,
+          },
+        ],
+      });
 
       // Confirmed
       setDailyConfirmed(res.data.statewise[e.target.value].deltaconfirmed);
@@ -49,7 +67,10 @@ function IndiaStates() {
 
   return (
     <div className="card__graph">
-      <h1>Hello</h1>
+      {/* <h1>Hello</h1> */}
+      <div className="graph__statewise">
+        <Bar data={stateData} />
+      </div>
       <div className="drop__cards">
         <div className="dropdown__div">
           <select className="drop__original" onChange={stateAssign}>
