@@ -30,9 +30,10 @@ function Graph() {
           labels: upDate,
           datasets: [
             {
-              label: "Covid Cases",
+              label: "Confirmed",
               data: confCase,
               backgroundColor: "#ff073a",
+              pointRadius: 0,
               borderWidth: 4,
               fill: true,
             },
@@ -122,9 +123,15 @@ function Graph() {
   return (
     <div>
       <div className="three__buttons">
-        <button onClick={conf}>Confirmed</button>
-        <button onClick={reco}>Recovered</button>
-        <button onClick={ded}>Deaths</button>
+        <button className="confirmed__button" onClick={conf}>
+          <h4>Confirmed</h4>
+        </button>
+        <button className="recovered__button" onClick={reco}>
+          <h4>Recovered</h4>
+        </button>
+        <button className="deaths__button" onClick={ded}>
+          <h4>Deaths</h4>
+        </button>
       </div>
       <div className="graph__container">
         <div
