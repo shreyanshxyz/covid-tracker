@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./IndiaStates.css";
 import { Bar } from "react-chartjs-2";
@@ -131,7 +131,7 @@ function IndiaStates() {
           <div className="row1">
             <div className="confirmed__card">
               <p>Confirmed</p>
-              <h4>+ {DailyConfirmed}</h4>
+              <h4 id="conf__toggle">+ {DailyConfirmed}</h4>
               <h3>{Confirmed}</h3>
             </div>
 
@@ -144,13 +144,13 @@ function IndiaStates() {
           <div className="row2">
             <div className="recovered__card">
               <p>Recovered</p>
-              <h4>+ {DailyRecovered}</h4>
+              <h4 id="recovered__toggle">+ {DailyRecovered}</h4>
               <h3>{Recovered}</h3>
             </div>
 
             <div className="deaths__card">
               <p>Deaths</p>
-              <h4>+ {DailyDeaths}</h4>
+              <h4 id="death__toggle">+ {DailyDeaths}</h4>
               <h3>{Deaths}</h3>
             </div>
           </div>
