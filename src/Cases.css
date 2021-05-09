@@ -105,10 +105,19 @@
     justify-content: center;
     margin-top: 2%;
     max-width: 400px;
-    margin-left: 20px;
   }
 
   .cases__main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 180px 180px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
     padding-bottom: 30px;
+    grid-row: auto;
+  }
+
+  .graph__container {
+    max-width: 300px;
   }
 }
