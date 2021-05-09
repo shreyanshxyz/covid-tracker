@@ -53,3 +53,15 @@
 .graph__static {
   width: 630px;
 }
+
+@media (max-width: 480px) {
+  .graph__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .graph__static {
+    width: 390px;
+  }
+}
