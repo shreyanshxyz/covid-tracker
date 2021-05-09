@@ -96,3 +96,19 @@
 .deceased__cases {
   padding: 2px 16px;
 }
+
+@media (max-width: 480px) {
+  .case__graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    max-width: 400px;
+    margin-left: 20px;
+  }
+
+  .cases__main {
+    padding-bottom: 30px;
+  }
+}
