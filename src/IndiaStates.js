@@ -34,7 +34,7 @@ function IndiaStates() {
         labels: ["Confirmed", "Recovered", "Deaths"],
         datasets: [
           {
-            label: "Total",
+            label: "Confirmed",
             data: [
               // confCase[e.target.value],
               res.data.statewise[e.target.value].confirmed,
@@ -116,15 +116,14 @@ function IndiaStates() {
       </div>
       <div className="card__graph">
         <div
-          style={{ paddingRight: "100px" }}
-          style={{ display: "none" }}
+          style={{ paddingRight: "100px", display: "none" }}
           id="toggle"
           className="graph__statewise"
         >
           <Bar data={stateData} />
         </div>
         <div
-          style={{ paddingLeft: "50px", display: "none" }}
+          style={{ display: "none" }}
           id="toggle1"
           className="casesdropdown__cards"
         >
