@@ -122,6 +122,7 @@ function Graph() {
     document.getElementById("recovered").style.visibility = "none";
     document.getElementById("deaths").style.visibility = "block";
   };
+
   return (
     <div>
       <div className="three__buttons">
