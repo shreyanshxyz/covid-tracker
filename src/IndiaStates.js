@@ -116,7 +116,7 @@ function IndiaStates() {
       </div>
       <div className="card__graph">
         <div
-          style={{ paddingRight: "100px", display: "none" }}
+          style={{ display: "none" }}
           id="toggle"
           className="graph__statewise"
         >
