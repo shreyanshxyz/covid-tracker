@@ -24,7 +24,7 @@
   <p align="center">
     A realtime Covid-19 Tracker!
     <br />
-    <a href="https://covid-tracker-2oo6sh.web.app/">View Demo</a>
+    <a href="https://covid-tracker-2oo6sh.web.app/" target="_blank">View Demo</a>
     ·
     <a href="/">Report Bug</a>
     ·
