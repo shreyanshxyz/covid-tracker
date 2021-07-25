@@ -133,4 +133,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@ayyshreyy](https://twitter.com/ayyshreyy) - shreyanshbhadoria@gmail.com
+Shreyansh Bhadoria - [@ayyshreyy](https://twitter.com/ayyshreyy) - shreyanshbhadoria@gmail.com
