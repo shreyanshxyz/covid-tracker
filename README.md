@@ -35,6 +35,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
+<h3 align="center">NOTE: Due to the covid19india API having stopped their operations, this project will become redundant, starting October 31st. To get a look and feel of how the website "used to work" please have a look at the images attached below. </h3>
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
