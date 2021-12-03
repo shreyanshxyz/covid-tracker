@@ -75,7 +75,6 @@ Here are some images for Visual Reference:
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [JavaScript](https://www.javascript.com/)
 * [React.js](https://reactjs.org/)
 * [Axios](https://axios-http.com/)
